@@ -128,3 +128,15 @@ footer a{
     font-size:20px;
     margin:auto;
 }
+/* steps element */
+.steps{
+    text-align:center;
+    background-color:#fce138;
+}
+.steps h2{
+    font-size:55px;
+    color:#024e76;
+    margin:35px;
+    padding:0 100px 20px 100px;
+    border-color:#39a6b2;
+}
