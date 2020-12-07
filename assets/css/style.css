@@ -168,12 +168,17 @@ footer a{
     background-color:#024e76;
     color:#fce138;
     overflow:auto;
- }
+}
 .trainer img {
     width: 35%;
-    float: left;
+    
  }
- 
+.trainer-imager-left img{
+     float: left;
+}
+.trainer-imager-right img{
+    float: right;
+}
 .trainer-bio {
     padding: 35px;
     float: left;
