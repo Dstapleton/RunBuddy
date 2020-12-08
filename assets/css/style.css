@@ -14,6 +14,13 @@ header{
     padding:20px 35px;
     background-color:#39a6b2;
 }
+/*fixed navbar
+.fixed-nav{
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+*/
 header h1{
     font-weight:bold;
     font-size:36px;
@@ -117,27 +124,27 @@ footer a{
     margin-bottom: 50px;
 }
 /* shared elements*/
-.section-title{
+.section-title{ 
+    display:inline-block;
     font-size:55px;
     color:#024e76;
-    margin-bottom:35px;
-    margin-top:50px;
+    margin:35px;
     padding:0px 100px 20px 100px;
-    display:inline-block;
+    border-bottom: 3px solid;
 }
 .primary-border{
-    border-bottom:3px solid;
+   
     border-color:#fce138;
 }
 .secondary-border{
-    border-bottom:3px solid;
+   
     border-color:#39a6b2;
 }
 /* steps element */
 .steps {
     text-align:center;
     background-color:#fce138;
-    padding-bottom: 35px;
+    padding-bottom:35px;
 }
 .steps div{
     margin-bottom:80px;
@@ -170,7 +177,7 @@ footer a{
     overflow:auto;
 }
 .trainer img {
-    width: 35%;
+    width:35%;
  }
 .trainer-imager-left img{
      float: left;
@@ -179,26 +186,68 @@ footer a{
     float: right;
 }
 .trainer-bio {
-    padding: 35px;
-    float: left;
-    width: 65%;
+    padding:35px;
+    float:left;
+    width:65%;
 }
 .text-left {
-    text-align: left;
+    text-align:left;
 }
 .trainer-bio h3 {
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size:32px;
+    margin-bottom:8px;
 }
 .trainer-bio h4 {
-    font-weight: lighter;
+    font-weight:lighter;
     font-size: 26px;
-    margin-bottom: 25px;
+    margin-bottom:25px;
 }
 .trainer-bio p {
-    font-size: 17px;
-    line-height: 1.3;
+    font-size:17px;
+    line-height:1.3;
 }
 .text-right {
-    text-align: right;
+    text-align:right;
 }
+/* contact elements */
+.contact {
+    text-align: center;
+    background: #024e76;
+  } 
+.contact h2 {
+    width: 500px;
+    color: #fce138;
+    display: block;
+    margin: 0px auto 30px auto;
+    padding:20px 0 0 0;
+} 
+.contact-info iframe {
+    width: 400px;
+    height: 400px;
+    padding-bottom:20px;
+}
+.contact-info div {
+    width: 410px;
+    display:inline-block;
+    vertical-align:top;
+    text-align:left;
+    margin: 30px 0 0 60px;
+    color: white;
+}
+  
+.contact-info h3 {
+    color: #fce138;
+    font-size: 32px;
+}
+  
+.contact-info p,
+.contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: normal;
+ }
+  
+.contact-info a {
+    color: #fce138;
+ }
