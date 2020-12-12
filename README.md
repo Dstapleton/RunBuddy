@@ -1,4 +1,4 @@
-# RunBuddy
+# RunBuddy Inc
 Favico link from favicon.io
 
 ## Purpose
