@@ -1,4 +1,4 @@
-# RunBuddy
+# RunBuddy, Inc
 Favico link from favicon.io
 
 ## Purpose
@@ -13,3 +13,5 @@ https://lernantino.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by [your name]
+
+### ©️2020 RunBuddy, Inc
