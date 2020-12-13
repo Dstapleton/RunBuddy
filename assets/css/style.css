@@ -75,10 +75,8 @@ footer a{
 .hero{
 	padding:60px;
 	background-image:url(../images/flipped-hero-image.jpg);
-	height:600px;
 	background-size:cover;
 	background-position:center;
-    position:relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -98,15 +96,12 @@ footer a{
 }
 .form-container{
 	padding:20px;
-    width:40%;
+    width:30%;
     margin: 3.5%;
 	background-color:#fce138;
 	color:#024e76;
 	border:solid 3px #024e76;
 	border-color:#024e76;
-	position:absolute;
-	bottom:120px;
-	right:140px;
 }
 .form-container p{
 	margin:5px 0px 15px 0px;
