@@ -84,7 +84,7 @@ footer a{
 .hero-text{
     color:#fff;
     width: 35%;
-    text-align: right;
+    text-align:justify;
     margin: 3.5%;
     font-size: 18px;
     line-height: 1.3;
@@ -93,10 +93,11 @@ footer a{
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-align:right;
 }
 .form-container{
 	padding:20px;
-    width:30%;
+    width:40%;
     margin: 3.5%;
 	background-color:#fce138;
 	color:#024e76;
@@ -130,9 +131,6 @@ footer a{
 	font-size:16px;
 }
 /* intro elements */
-.intro{
-    text-align:center;
-}
 .intro p{
     list-style:1.7;
     color:#39a6b2;
@@ -140,15 +138,23 @@ footer a{
     font-size:20px;
     margin:auto;
     margin-bottom: 50px;
+    text-align: center;
 }
 /* shared elements*/
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .section-title{ 
-    display:inline-block;
     font-size:55px;
     color:#024e76;
     margin:35px;
-    padding:0px 100px 20px 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35 auto;
     border-bottom: 3px solid;
+    width: 50%;
 }
 .primary-border{
    
@@ -160,32 +166,47 @@ footer a{
 }
 /* steps element */
 .steps {
-    text-align:center;
-    background-color:#fce138;
-    padding-bottom:35px;
+    background-color: #fce138;
 }
-.steps div{
-    margin-bottom:80px;
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
-.steps img{
-    width:15%;
-    margin:10px 0;
+.step h3{
+    flex:1 30%;
 }
-.steps h3{
-    color:#024e76;
-    font-size:46px;
-    margin-top:10px;
+.step-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex:2 70%;
 }
-.steps p{
-    color:#39a6b2;
-    font-size:23px;
+.step-image {
+    flex: 1 12%;
+    margin-right: 20px;
 }
-.steps span{
-    font-size:38px;
+.step-image img {
+    max-width: 100%;
 }
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+.step-text {
+    flex:12;
+}
+
+
 /* meet the trainer elements */
 .trainers {
-    text-align:center;
+    background-color: blueviolet;
 }
 .trainer {
     width:900px;
@@ -229,16 +250,18 @@ footer a{
 }
 /* contact elements */
 .contact {
-    text-align:center;
+    flex-wrap: wrap;
+    align-content: center;
     background:#024e76;
     padding: 60px;
   }
-.contact-info{
-    width:1400px;
-    margin:0 auto 0 auto;
+.contact-info {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
 }
 .contact h2 {
-    display:block;
     color:#fce138;
     overflow:hi;
 }
@@ -247,8 +270,6 @@ footer a{
     height:400px;
 }
 .contact-info div {
-    width:410px;
-    display:inline-block;
     vertical-align: top;
     text-align:left;
     margin:30px 0 0 60px;

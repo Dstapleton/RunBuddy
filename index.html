@@ -56,22 +56,22 @@
                 <h2>
                     Start Building Habats
                 </h2>
-                <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                    It has roots in a piece of classical Latin literature from 45 BC,
-                    making it over 2000 years old. Richard McClintock,
-                    a Latin professor at Hampden-Sydney College in Virginia,
-                    looked up one of the more obscure Latin words, consectetur,
-                    from a Lorem Ipsum passage, and going through
-                    the cites of the word in classical literature,
-                    discovered the undoubtable source. Lorem Ipsum comes from sections
-                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-                    (The Extremes of Good and Evil) by Cicero, written in 45 BC.
-                    This book is a treatise on the theory of ethics, very popular
-                    during the Renaissance. The first line of Lorem Ipsum,
-                    "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                </p>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old. Richard McClintock,
+                        a Latin professor at Hampden-Sydney College in Virginia,
+                        looked up one of the more obscure Latin words, consectetur,
+                        from a Lorem Ipsum passage, and going through
+                        the cites of the word in classical literature,
+                        discovered the undoubtable source. Lorem Ipsum comes from sections
+                        1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+                        (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                        This book is a treatise on the theory of ethics, very popular
+                        during the Renaissance. The first line of Lorem Ipsum,
+                        "Lorem ipsum dolor sit amet..",
+                        comes from a line in section 1.10.32.
+                    </p>
             </div>
             <div class="form-container">
                 <h3>Get Started Today!</h3>
@@ -116,7 +116,9 @@
 
         <!-- "what we do" -->
         <section id="what-we-do" class="intro">
-            <h2 class="section-title primary-border">What we do</h2>
+            <div class="flex-row">
+                <h2 class="section-title primary-border">What we do</h2>
+            </div>
             <p>
                 butcher selfies chambray shabby chic gentrify 
                 readymade yr Echo Park XOXO Tumblr normcore Banksy
@@ -130,39 +132,71 @@
 
         <!-- "what you do"-->
         <section  id="what-you-do" class="steps">
-            <h2 class="section-title secondary-border">What you do</h2>
+           <div class="flex-row">
+                <h2 class="section-title secondary-border">What you do</h2>
+            </div>    
             <!-- step one-->
-            <div>
-                <img src="./assets/images/step-1.svg" alt="">
-                <h3>Step 1: <span>Fill out the Form Above</span></h3>
-                <p>You're alredy here, so why not?</p>
+            <div class="step">
+                <h3>Step 1:</h3>
+                <div class="step-info">
+                    <div class="step-image">
+                        <img src="./assets/images/step-1.svg" alt="">
+                    </div>
+                    <div class="step-text">
+                        <h4>Fill Out The Form Above</h4>
+                        <p>You're alredy here, so why not?</p>
+                    </div>
+                </div>    
             </div>
             <!-- step two-->
-            <div>
-                <img src="./assets/images/step-2.svg" alt="">
-                <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-                <p>Are you here to build muscle, lose weight, or just feel good</p>
+            <div class="step">
+                <h3>Step 2:</h3>
+                <div class="step-info">
+                    <div class="step-image">
+                        <img src="./assets/images/step-2.svg" alt="">
+                    </div>
+                    <div class="step-text">
+                        <h4>Consult with One of Our Trainers</h4>
+                        <p>Are you here to build muscle, lose weight, or just feel good</p>
+                    </div>
+                </div>    
             </div>
             <!-- step three-->
-            <div>
-                <img src="./assets/images/step-3.svg" alt="">
-                <h3>Step: 3: <span>Get Running.</span></h3>
-                <p>Hit the ground running (literally) once your trainer 
-                    lays out your plan.
-                </p>
+            <div class="step">
+                <h3>Step: 3:</h3>
+                <div class="step-info">
+                    <div class="step-image">
+                        <img src="./assets/images/step-3.svg" alt=""> 
+                    </div>
+                    <div class="step-text">
+                        <h4>Get Running</h4>
+                        <p>Hit the ground running (literally) once your trainer 
+                            lays out your plan.
+                        </p>
+                    </div>
+                </div>
             </div>
             <!-- step four-->
-            <div>
-                <img src="./assets/images/step-4.svg" alt="">
-                <h3>Step 4: <span>See Results.</span></h3>
-                <p>Bi-weekly checkins with your trainer will keep you focused</p>
+            <div class="step">
+                <h3>Step 4:</h3>
+                <div class="step-info">
+                    <div class="step-image">
+                        <img src="./assets/images/step-4.svg" alt="">
+                    </div>
+                    <div class="step-text">
+                        <h4>See Results</h4>
+                        <p>Bi-weekly checkins with your trainer will keep you focused</p>
+                    </div> 
+                </div>   
             </div>
         </section>
         
         <!-- "meet the trainers" -->
         <!-- Arron -->
         <section id="your-trainers" class="trainers">
-            <h2 class="section-title primary-border">Meet the trainers</h2>
+            <div class="flex-row">
+                <h2 class="section-title primary-border">Meet the trainers</h2>
+            </div>
             <article class="trainer text-left trainer-imager-left">
                 <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron"/>
                 <div class="trainer-bio">
@@ -212,9 +246,10 @@
 
         <!-- "reach out"-->
         <section id="reach-out" class="contact">
-            
             <div class="contact-info">
-                <h2 class="section-title secondary-border">Reach Out</h2>
+                <div class="flex-row">
+                    <h2 class="section-title secondary-border">Reach Out</h2>
+                </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2853.94690552976!2d-79.69265218382246!3d44.33159571631449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882abc4bc2533511%3A0x9d98a9e4aa578fe4!2sBarrie%2C%20ON%20L4N%209P6!5e0!3m2!1sen!2sca!4v1607316893194!5m2!1sen!2sca" 
                     
                      
