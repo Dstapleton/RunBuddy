@@ -8,14 +8,12 @@
     color:red;
 }
 .privacy-h2{
-    display:inline-block;
     color:#fce138;
     border-bottom: 4px solid #fce138;
     padding:0 80px 15px 80px;
     font-size:42px;
     font-weight:normal;
     font-style:italic;
-    position:absolute;
     bottom:20%;
     left:40%;
     margin:0 auto 0 auto;
