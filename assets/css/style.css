@@ -240,32 +240,52 @@ footer a{
    
 }
 /* Services */
+.services {
+    background-color:#fce138;
+}
+.service-grid-wrapper {
+    display:flex;
+    width:100%;
+    justify-content:center;
+    padding: 20px;
+}
 .service-grid-container {
     display:grid;
-    max-width: 940px;
-    margin:0 auto;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows:repeat(3,5rem);
+    width:80%;
+    background-color:#39a6b2;
+    border:2px solid #024e76;
+    grid-template-columns:1fr repeat(2,4fr);
+    grid-template-rows:repeat(5,1fr) 2fr;
     grid-gap:5px;
+    color:#024e76;
+    font-size:1.2rem;
 }
 .service-grid-item {
-    background-color:orange;
-    border:solid;
-    color:black;
-    padding:1rem;
+    display:flex;
+    align-items:center;
+    background-color:lightyellow;
+    border:2px solid #024e76;
+    padding:15px 0;
+    text-align:center;
+    justify-content:center;
 }
-.box1 {
-    grid-column:1/ span 1;
-    grid-row:1/ span 2;
+.service-grid-item.basic {
+    grid-column:2/ span 1;
 }
-.box2 {
-    grid-column:3/4;
-    grid-row:1/-1;
-}
-.box3 {
+.service-grid-item.both{
     grid-column:2/ span 2;
-    grid-row:3/ span 1;
 }
+.service-grid-item.cancle {
+    writing-mode:vertical-lr;
+    grid-column:1;
+    grid-row:1/-1;
+    transform:rotate(180deg);
+}
+.grid-head, .grid-price, .service-grid-item.cancle {
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
 
 /* contact section */
 .contact {
