@@ -9,6 +9,7 @@
     --primary-color:#fce138;
     --secondary-color:#024e76;
     --tertiary-color:#39a6b2;
+    --rgba-color:rgba(252, 225, 56, 0.3);
 }
 /* */
 body{
@@ -21,13 +22,13 @@ body{
 header{
     padding:20px 35px;
     background-image:url(../images/flipped-hero-image.jpg);
+    background-size: cover;
     background-color:var(--secondary-color);
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
-    box-shadow:5px 0px 5px rgba(58, 54, 7, 0.8);
     background-attachment:fixed;
-    background-position:76.7%;
+    background-position:80%;
 }
 
 /*fixed navbar*/
@@ -105,17 +106,16 @@ footer div{
 footer a{
     color:var(--secondary-color);
 }
-/* section elements */
+/* header section */
 .hero{
     align-items:flex-start;
 	padding:60px;
 	background-image:url(../images/flipped-hero-image.jpg);
 	background-size:cover;
-    background-position:center;
     background-attachment:fixed;
     background-position:80%;
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
     flex-wrap: wrap;
 }
 .hero-text{
@@ -156,7 +156,7 @@ footer a{
    
 }
 .form-input {
-	display:block;
+	
 	border:3px solid var(--secondary-color);
 	padding:7px 15px;
 	font-size:16px;
@@ -167,7 +167,6 @@ footer a{
     background-color:rgba(255, 255, 255, 0.5);
     outline: none;
 }
-
 .form-container button {
 	color:#f5f4ef;
 	background-color:var(--secondary-color);
@@ -177,12 +176,84 @@ footer a{
     border-radius:5px;
     cursor: pointer;
 }
+
+/**/
 .form-input:focus {
     background-color:rgba(255, 255, 255, 0.9);
 }
 .form-container button:hover {
     background-color:var(--tertiary-color);
 }
+.form-container input:hover {
+    background-color: #39a6b285;
+}
+
+/* custom form elements*/
+.checkbox-wrapper,
+.radio-wrapper {
+    position: relative;
+}
+.checkbox-wrapper input,
+.radio-wrapper input {
+    opacity:1;
+}
+.checkbox-wrapper input,
+ .radio-wrapper input {
+    left: 10px;
+    line-height:1.8;
+    margin:10px;
+}
+.checkbox-wrapper input::before,
+ .radio-wrapper input::before {
+    content:"";
+    height:20px;
+    width:20px;
+    border:1px solid var(--secondary-color);
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    top:-4px;
+    left:-30;
+    z-index:1;
+}
+.radio-wrapper input::before {
+    border-radius:50%;
+}
+.radio-wrapper input::after {
+    content:"";
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    position:absolute;
+    background-color:var(--secondary-color);
+    left:41px;
+    top:-3px;
+    z-index:2;
+}
+.radio-position input::after{
+    left:36px;
+}
+.checkbox-wrapper input::after {
+    content:"";
+    height:6px;
+    width:14px;
+    border-left:2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    position:absolute;
+    left:14px;
+    top:1px;
+    transform:rotate(-58deg);
+    z-index:2;
+}
+.checkbox-wrapper input::after,
+.radio-wrapper input::after {
+    content:none;
+}
+.checkbox-wrapper input:checked::after,
+.radio-wrapper input:checked::after {
+    content:"";
+}
+
+
 
 /* intro elements */
 .intro p{
@@ -191,65 +262,67 @@ footer a{
     width:80%;
     font-size:20px;
     margin:auto;
-    margin-bottom: 50px;
+    margin-bottom:50px;
     text-align: center;
 }
+
 /* shared elements*/
 .flex-row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 .section-title{ 
     font-size:48px;
     color:var(--secondary-color);
     margin:35px;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35 auto;
-    width: 50%;
+    padding-bottom:20px;
+    text-align:center;
+    margin:0 auto 35 auto;
+    width:50%;
 }
 .primary-border{
-    border-bottom: 3px solid;
+    border-bottom:3px solid;
     border-color:var(--primary-color);
 }
 .secondary-border{
     border-bottom: 3px solid;
     border-color:var(--tertiary-color);
 }
+
 /* steps section */
 .steps {
     background-color: var(--primary-color);
 }
 .step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
+    margin:50px auto;
+    padding-bottom:50px;
+    width:80%;
     border-bottom: 1px solid var(--tertiary-color);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
 }
 .step h3{
     flex:1 30%;
 }
 .step-info{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
     flex:2 70%;
 }
 .step-image {
-    flex: 1 12%;
-    margin-right: 20px;
+    flex:1 12%;
+    margin-right:20px;
 }
 .step-image img {
     max-width: 100%;
 }
 .step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
+    font-size:26px;
+    line-height:1.5;
     color: var(--secondary-color);
 }
 .step-text {
@@ -262,11 +335,11 @@ footer a{
 
 /* meet the trainer section */
 .trainers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    width:100%;
+    margin:0 auto;
 }
 .trainer {
     flex: 1;
@@ -274,10 +347,33 @@ footer a{
     background-color:var(--secondary-color);
     color:var(--primary-color);
 }
-.trainer img {
+.trainer-img {
     width:100%;
+    min-height:300px;
+    background-size:cover;
+    display:flex;
+    padding:15px;
+    align-items:center;
+    position:relative;
 }
-
+.trainer-1 {
+    background-image: url(../images/trainer-1.jpg);
+}
+.trainer-2 {
+    background-image: url(../images/trainer-2.jpg);
+}
+.trainer-3 {
+    background-image: url(../images/trainer-3.jpg);
+}
+.trainer-img::after {
+    content:"";
+    height:100%;
+    width:100%;
+    background-color:var(--rgba-color);
+    position:absolute;
+    top:0;
+    left:0;
+}
 .trainer-bio {
     padding:25px;
     line-height:1.3;
@@ -292,8 +388,8 @@ footer a{
 }
 .trainer-bio p {
     font-size:17px;
-   
 }
+
 /* Services */
 .services {
     background-color:var(--primary-color);
@@ -303,7 +399,6 @@ footer a{
     width:100%;
     justify-content:center;
     padding: 20px;
-   
 }
 .service-grid-container {
     display:grid;

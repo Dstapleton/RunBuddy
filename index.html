@@ -79,7 +79,7 @@
                         comes from a line in section 1.10.32.
                     </p>
             </div>
-            <div class="form-container">
+            <div class="form-container rounded-coners">
                 <h3>Get Started Today!</h3>
 				<p>
 					Fill out this form and one of our trainers will schedule a consultation
@@ -98,20 +98,26 @@
 					
 					<!--radio fields-->
 					<p>Have you worked with at trainer before?
-					
-					<lable for="email">yes</lable>
-					<input type="radio" name="trainer-confirm" id="trainer-yes"/>
-					
-					<lable for="email">No</lable>
-					<input type="radio" name="trainer-confirm" id="traner-no"/>
+                        <span class="radio-wrapper">
+                            <lable for="trainer-yes">Yes</lable>
+                            <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                        </span>
+                        
+                        <span class="radio-wrapper radio-position">
+                            <lable for="trainer-no">No</lable>
+                            <input type="radio" name="trainer-confirm" id="traner-no"/>
+                        </span>
 					</p>
 					
 					<!-- apporate age for registration-->
 					<p>
-						<lable for="checkbox">
-							I acknowledge that I am at least 18 years of age.
-						</lable>
-						<input type="checkbox" name="age-comfirm" id="checkbox">
+                        <span class="checkbox-wrapper">
+                            <input type="checkbox" name="age-comfirm" id="checkbox"/>
+                            <lable for="checkbox">
+                                I acknowledge that I am at least 18 years of age.
+                            </lable>
+                            
+                        </span>
 					</p>
 					<button type="submit">
 						Get Running!
@@ -206,10 +212,13 @@
             <div class="trainers">
                 <!-- Arron -->
                 <article class="trainer">
-                    <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron"/>
+                    <div class="trainer-img trainer-1" alt="Arron Stephens in his workout clothes, ready to pump iron">
+                        <div>
+                            <h3 class="trainer-name">Arron Stephens</h3>
+                            <h4 class="trainer-role">Speed / Strength</h4>
+                        </div>
+                    </div>
                     <div class="trainer-bio">
-                        <h3 class="trainer-name">Arron Stephens</h3>
-                        <h4 class="trainer-role">Speed / Strength</h4>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             Sequi neque animi quo cupiditate commodi saepe culpa sed
@@ -221,10 +230,13 @@
         
                 <!-- Joanna -->
                 <article class="trainer">
-                    <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/>
+                    <div class="trainer-img trainer-2" alt="Joanna Gill cooling off after a workout">
+                        <div>
+                            <h3 class="trainer-name">Joanna Gill</h3>
+                            <h4 class="trainer-role">Endurance</h4>
+                        </div>
+                    </div>
                     <div class="trainer-bio">
-                        <h3 class="trainer-name">Joanna Gill</h3>
-                        <h4 class="trainer-role">Endurance</h4>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             Sequi neque animi quo cupiditate commodi saepe culpa sed
@@ -236,10 +248,13 @@
         
                 <!--Harry the head band -->
                 <article class="trainer">
-                    <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights"/>
-                    <div class="trainer-bio">
-                        <h3 class="trainer-name">Harry "the Headband" Smith</h3>
-                        <h4 class="trainer-role">Strength</h4>
+                   <div class="trainer-img trainer-3" alt="Harry Smith wearing a headband and lifting comically small pink weights">
+                        <div>
+                            <h3 class="trainer-name">Harry "the Headband" Smith</h3>
+                            <h4 class="trainer-role">Strength</h4>
+                        </div>
+                    </div>
+                   <div class="trainer-bio">
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             Sequi neque animi quo cupiditate commodi saepe culpa sed
