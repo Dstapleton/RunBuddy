@@ -1,5 +1,5 @@
 # RunBuddy, Inc
-Favico link from favicon.io
+A web app that is accessable from any device.
 
 ## Purpose
 A website that offers fitness training services.
