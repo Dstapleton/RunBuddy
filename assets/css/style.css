@@ -74,6 +74,8 @@ header nav ul li a {
     font-size:1.55vw;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     padding:10px;
+    transition: all 0.5s ease-out;
+    
 }
 header nav ul li a:hover {
     background-color:var(--primary-color);
@@ -166,6 +168,7 @@ footer a{
     border-radius:15px;
     background-color:rgba(255, 255, 255, 0.5);
     outline: none;
+    transition:all 0.3s ease-out;
 }
 .form-container button {
 	color:#f5f4ef;
@@ -175,6 +178,7 @@ footer a{
     font-size:16px;
     border-radius:5px;
     cursor: pointer;
+    transition:all 0.5s ease-in;
 }
 
 /**/
@@ -361,6 +365,7 @@ footer a{
     position: relative;
     z-index:10;
     top:115px;
+    opacity:0;
 }
 .trainer-img h3 {
     font-size:28px;
@@ -394,9 +399,20 @@ footer a{
 .trainer-bio p {
     font-size:17px;
 }
+.trainer .trainer-img::after,
+.trainer .trainer-img h3,
+.trainer .trainer-img h4 {
+    transition:all 0.5s ease-out 0.1s;
+}
 .trainer:hover
-.trainer-img::after {
-    opacity:0;
+.trainer-img::after,
+.trainer:hover
+.trainer-img h3,
+.trainer:hover
+.trainer-img h4 {
+     opacity:1;
+   
+   
 }
 .trainer-img::after {
     content:"";
@@ -406,6 +422,7 @@ footer a{
     position:absolute;
     top:0;
     left:0;
+    opacity:0;
 }
 
 
@@ -503,6 +520,7 @@ footer a{
      border-radius: 15px;
      background-color:rgba(255, 255, 255, 0.5);
      outline:none;
+     transition:all 0.5s ease-in;
 }
 
 .contact-info a {
@@ -520,6 +538,7 @@ footer a{
      font-size: 16px;
      border-radius:15px;
      cursor:pointer;
+     transition:all 0.5s ease-in;
  }
  /* form states */
 .contact-form input:hover,
