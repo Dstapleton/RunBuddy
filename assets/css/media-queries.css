@@ -22,7 +22,7 @@
         width:100%;
     }
     
-    /**/
+    /* hero form */
     .hero-text, .form-container {
         width:100%;
     }
@@ -59,7 +59,7 @@
     .step-text {
         flex:100%;
     }
-    /**/
+    /* service section */
     .service-grid-container {
         grid-template-columns:1fr 1fr;
     }
@@ -74,6 +74,16 @@
         writing-mode:unset;
         grid-column:1 /-1;
         grid-row:-1;
+    }
+    /* trainer cards */
+    .trainer-bio h3,
+    .trainer-bio h4{
+        display:block;
+    }
+    .trainer-index h3,
+    .trainer-index h4,
+    .trainer-img::after {
+        display: none;
     }
 }
 
